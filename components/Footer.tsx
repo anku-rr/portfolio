@@ -2,7 +2,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
-
+import dayjs from 'dayjs'
 const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
@@ -166,7 +166,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center max-w-lg mx-auto">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Ankur Kumar
+          Copyright © {dayjs().year()} Ankur Kumar
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
